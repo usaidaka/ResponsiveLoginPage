@@ -1,7 +1,9 @@
-@media only screen and (min-width: 944px) {
+@media only screen and (min-width: 768px) {
   .container {
     display: grid;
     grid-template-areas: "cover cover cover form form";
+    background: url("./assets/cover-desktop.png"),
+      lightgray 50% / cover no-repeat;
   }
 
   .container .cover-container {
@@ -26,7 +28,6 @@
   }
 
   .container .cover-container .cover-word .word {
-    width: 276px;
     width: 276px;
   }
 
@@ -60,7 +61,7 @@
     grid-area: form;
     background-color: white;
     background-image: none;
-    padding: 50px 90px;
+    padding: 50px 40px;
   }
 
   .form-container .form-content .form-card .form-wrapper .form-password span {
@@ -92,7 +93,22 @@
 
 @media only screen and (max-width: 900px) {
   .container .cover-container .cover-word {
-    width: 500px;
+    width: 250px;
     height: 613px;
+    padding: 80px 20px;
+  }
+
+  .container .cover-container .cover-word .word {
+    width: 100px;
+  }
+
+  .container .cover-container .cover-word .word h1,
+  span {
+    font-size: 38px;
+  }
+
+  .container .cover-container .cover-word .word p {
+    padding-top: 20px;
+    font-size: 12px;
   }
 }
