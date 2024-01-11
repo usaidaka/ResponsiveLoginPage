@@ -1,0 +1,78 @@
+@media only screen and (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-areas: "cover cover cover form form";
+  }
+
+  .container .cover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cover;
+    background: url("./assets/cover-desktop.png"),
+      lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container .cover-container .cover-word {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px);
+    width: 746px;
+    height: 613px;
+    flex-shrink: 0;
+    padding: 140px 90px;
+  }
+
+  .container .cover-container .cover-word .word {
+    max-width: 276px;
+  }
+
+  .container .cover-container .cover-word .word h1,
+  span {
+    text-align: justify;
+    color: #fff;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+  }
+
+  .container .cover-container .cover-word .word span {
+    color: #3e334e;
+    line-height: 100%; /* 48px */
+  }
+
+  .container .cover-container .cover-word .word p {
+    padding-top: 50px;
+    color: #3e334e;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+
+  .form-container {
+    grid-area: form;
+    background-color: white;
+    background-image: none;
+    padding: 50px 90px;
+  }
+
+  .form-container .form-content .form-card .form-wrapper .form-password span {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .form-container
+    .form-content
+    .form-card
+    .form-wrapper
+    .form-password
+    span#off {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --gradient-checkbox: linear-gradient(
+    270deg,
+    rgba(251, 101, 100, 1) 0%,
+    rgba(160, 60, 234, 1) 100%
+  );
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.cover-container {
+  display: none;
+}
+
+/* GLOBAL SCREEN */
+.form-container {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  flex-shrink: 0;
+  border-radius: 24px 24px 0px 0px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.62) 41.98%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    url("/assets/cover-mobile.png");
+  padding: 50px 20px;
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "form-content"
+    "form-content"
+    "form-content";
+}
+
+/* LOGO */
+.form-container .logo-image {
+  margin-bottom: 30px;
+  grid-area: logo;
+}
+
+/* FORM CONTENT */
+.form-container .form-content {
+  grid-area: form-content;
+  margin-top: 100px;
+}
+
+/* FONT TITLE */
+.form-container .form-content .form-title {
+  grid-area: form-content;
+}
+
+.form-container .form-content .form-title h1 {
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+}
+
+.form-container .form-content .form-title h3 {
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+/* FORM CARD */
+.form-container .form-content .form-card {
+}
+
+.form-container .form-content .form-card h2 {
+  padding-top: 30px;
+  align-self: stretch;
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+.form-container .form-content .form-card .form-wrapper {
+}
+
+/* EMAIL */
+.form-container .form-content .form-card .form-wrapper .form-email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-email label {
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  align-self: stretch;
+  margin-bottom: 5px;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-email input {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid rgba(62, 51, 78, 0.6);
+  background: rgba(255, 255, 255, 0);
+}
+
+/* PASSWORD */
+.form-container .form-content .form-card .form-wrapper .form-password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-password label {
+  align-self: stretch;
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  margin-bottom: 5px;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-password input {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid rgba(62, 51, 78, 0.6);
+  background: rgba(255, 255, 255, 0);
+}
+
+.form-container .form-content .form-card .form-wrapper .form-password span {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: block;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-password span#off {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: none;
+}
+
+/* FORM OPTION */
+.form-container .form-content .form-card .form-wrapper .form-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.form-container
+  .form-content
+  .form-card
+  .form-wrapper
+  .form-option
+  .form-option-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.form-container
+  .form-content
+  .form-card
+  .form-wrapper
+  .form-option
+  .form-option-checkbox
+  label {
+  color: #3e334e;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+}
+
+.form-container
+  .form-content
+  .form-card
+  .form-wrapper
+  .form-option
+  .form-option-checkbox
+  input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3e334e;
+  background: rgb(251, 101, 100);
+}
+
+.form-container .form-content .form-card .form-wrapper .form-option a {
+  color: #3e334e;
+  text-align: right;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  text-decoration-line: underline;
+}
+
+/* FORM SUBMIT */
+.form-container .form-content .form-card .form-wrapper .form-submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-container .form-content .form-card .form-wrapper .form-submit button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+.form-container
+  .form-content
+  .form-card
+  .form-wrapper
+  .form-submit
+  button.login {
+  border-radius: 8px;
+  background: var(
+    --warm-gradient,
+    linear-gradient(270deg, #fb6564 0%, #a03cea 100%)
+  );
+}
+
+.form-container
+  .form-content
+  .form-card
+  .form-wrapper
+  .form-submit
+  button.signup {
+  border-radius: 8px;
+  border: 1px solid #3e334e;
+  color: #3e334e;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+/* OTHER OPTION */
+.form-container .form-content .option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.form-container .form-content .option-container p {
+  align-self: stretch;
+  color: #3e334e;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  padding-bottom: 20px;
+}
+
+.form-container .form-content .option-container .option-socmed {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form-content .option-container .option-socmed button {
+  padding: 12px 16px;
+  justify-content: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 4px;
+  border: 1px solid #afa2c3;
+}

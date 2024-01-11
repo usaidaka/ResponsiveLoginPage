@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleDesktop.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="cover-container">
+        <div class="cover-word">
+          <div class="word">
+            <h1>Digital platform for distance</h1>
+            <span>learing.</span>
+            <p>You will never know everything. But you will know more.</p>
+          </div>
+        </div>
+      </section>
+      <section class="form-container">
+        <div class="logo-image">
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <div class="form-content">
+          <!-- FORM TITLE -->
+          <div class="form-title">
+            <h1>Hey, Hello👋</h1>
+            <h3>Enter your email and password to login.</h3>
+          </div>
+          <div class="form-card">
+            <!-- FORM CARD -->
+
+            <h2>Login</h2>
+            <form class="form-wrapper">
+              <div class="form-email">
+                <label for="">Email</label>
+                <input type="email" />
+              </div>
+              <div class="form-password">
+                <label for="">Password</label>
+                <input type="password" id="myInput" />
+                <span onclick="myFunction()">
+                  <img src="./assets/visibility.png" alt=""
+                /></span>
+                <span onclick="myFunction()" id="off">
+                  <img src="./assets/visibility_off.png" alt=""
+                /></span>
+              </div>
+              <div class="form-option">
+                <!-- FORM OPTION -->
+                <div class="form-option-checkbox">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Remember Me</label>
+                </div>
+                <a href="">Forgot Password?</a>
+              </div>
+              <div class="form-submit">
+                <!-- FORM SUBMIT -->
+                <button type="submit" class="login">Login</button>
+                <button type="button" class="signup">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="option-container">
+            <!-- OTHER OPTION -->
+            <p>Or, login with</p>
+
+            <div class="option-socmed">
+              <button>Facebook</button>
+              <button>Linked In</button>
+              <button>Google</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
