@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 944px) {
   .container {
     display: grid;
     grid-template-areas: "cover cover cover form form";
@@ -13,6 +13,7 @@
       lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
+    /* height: 100vh; */
   }
 
   .container .cover-container .cover-word {
@@ -25,7 +26,8 @@
   }
 
   .container .cover-container .cover-word .word {
-    max-width: 276px;
+    width: 276px;
+    width: 276px;
   }
 
   .container .cover-container .cover-word .word h1,
@@ -74,5 +76,23 @@
     span#off {
     margin-top: 15px;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    height: min-content;
+  }
+
+  .container .cover-container .cover-word {
+    width: 500px;
+    height: 613px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container .cover-container .cover-word {
+    width: 500px;
+    height: 613px;
   }
 }

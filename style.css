@@ -52,7 +52,7 @@
 /* FORM CONTENT */
 .form-container .form-content {
   grid-area: form-content;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 /* FONT TITLE */
